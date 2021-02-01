@@ -86,3 +86,51 @@ More..."""^^xsd:string ;
   a ns1:Period ;
   ns1:periodStartDate "2019-05-01T00:00:00+00:00"^^xsd:dateTime ;
   ns1:periodEndDate "2024-04-30T00:00:00+00:00"^^xsd:dateTime .
+
+  <http://data.tbfy.eu/contractingProcess/ocds-0c46vo-0012-329224/release/329224>
+    a <http://data.tbfy.eu/ontology/tbfy#Release> ;
+    ns0:releaseURI "https://openopps.com/tenders/ocds-0c46vo-0012-329224/?format=json"^^xsd:anyURI ;
+    ns0:releasePublishedDate "2019-03-30T01:37:49.888232+00:00"^^xsd:dateTime ;
+    ns0:releasePublisherUID "https://beta.companieshouse.gov.uk/company/04962733"^^xsd:string ;
+    ns0:releasePublisherURI "https://openopps.com"^^xsd:anyURI ;
+    ns0:releasePublisherName "Open Opps"^^xsd:string ;
+    ns0:releasePublisherScheme "Companies House"^^xsd:string ;
+    ns0:releaseLicense "https://opendatacommons.org/licenses/odbl/"^^xsd:string ;
+    ns0:releasePublicationPolicy "https://openopps.com/legal/"^^xsd:string ;
+    ns0:releaseId "329224"^^xsd:string ;
+    ns0:releaseDate "2019-01-01 22:02:26.987221+00:00"^^xsd:dateTime ;
+    ns0:releaseTag "tender"^^xsd:string ;
+    ns0:releaseInitiationType "tender"^^xsd:string .
+
+  <http://data.tbfy.eu/contractingProcess/ocds-0c46vo-0012-329224>
+    a <http://data.tbfy.eu/ontology/ocds#ContractingProcess> ;
+    ns1:ocid "ocds-0c46vo-0012-329224"^^xsd:string ;
+    ns1:hasRelease <http://data.tbfy.eu/contractingProcess/ocds-0c46vo-0012-329224/release/329224> ;
+    ns1:hasTender <http://data.tbfy.eu/tender/ocds-0c46vo-0012-329224_329224> .
+
+  <http://data.tbfy.eu/contractingProcess/ocds-0c46vo-0012-329224/buyer>
+    a ns1:Organisation ;
+    ns1:legalName "Aalst"^^xsd:string ;
+    ns1:hasContactPoint <http://data.tbfy.eu/contractingProcess/ocds-0c46vo-0012-329224/buyer/contactPoint> ;
+    ns1:hasAddress <http://data.tbfy.eu/contractingProcess/ocds-0c46vo-0012-329224/buyer/address> ;
+    ns1:isBuyerFor <http://data.tbfy.eu/contractingProcess/ocds-0c46vo-0012-329224> ;
+    ns1:playsRoleIn <http://data.tbfy.eu/contractingProcess/ocds-0c46vo-0012-329224> .
+
+  <http://data.tbfy.eu/contractingProcess/ocds-0c46vo-0012-329224/buyer/address>
+    a ns1:Address ;
+    schema:addressCountry "Belgium"^^xsd:string .
+
+  <http://data.tbfy.eu/tender/ocds-0c46vo-0012-329224_329224>
+    a ns1:Tender ;
+    ns1:tenderId "329224"^^xsd:string ;
+    dc:title "cluster Facility. Raamovereenkomst voor onderhoud technische installaties en bewaking Utopia voor een periode van 5 jaar"^^xsd:string ;
+    dc:description "zie II.2.4"^^xsd:string ;
+    ns1:tenderStatus "complete" ;
+    ns1:hasDocument <http://data.tbfy.eu/tender/ocds-0c46vo-0012-329224_329224/document/tender_url> .
+
+  <http://data.tbfy.eu/tender/ocds-0c46vo-0012-329224_329224/document/tender_url>
+    a ns1:Document ;
+    ns1:documentId "tender_url"^^xsd:string ;
+    ns1:documentType "tenderNotice" ;
+    dc:language "en"^^xsd:string ;
+    schema:URL "https://enot.publicprocurement.be/enot-war/preViewNotice.do?noticeId=329224&saveSearchParams=true&useWorkingOrganisationId=%66%61%6C%73%65&allLanguages=%66%61%6C%73%65&selectAllChildren=%74%72%75%65&isPopup=&advancedSearch=&publicationDateBDATo=&publicationNumberBDA=&versionReferenceNumber=&d-446978-p=%32%32%37&tenderSubmissionDeadline=&title=&marketPlaceType=%62%6F%74%68&publicationDateBDAFrom=&noticeStatus=%30&purchaseAuthority=&"^^xsd:string .
