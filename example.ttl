@@ -1,0 +1,88 @@
+@prefix ns0: <http://data.tbfy.eu/ontology/tbfy#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://data.tbfy.eu/ontology/ocds#> .
+@prefix schema: <http://schema.org/> .
+
+<http://data.tbfy.eu/contractingProcess/ocds-0c46vo-0009-DN379620-1/release/DN379620-1>
+  a <http://data.tbfy.eu/ontology/tbfy#Release> ;
+  ns0:releaseURI "https://openopps.com/tenders/ocds-0c46vo-0009-DN379620-1/?format=json"^^xsd:anyURI ;
+  ns0:releasePublishedDate "2019-03-30T01:34:10.025789+00:00"^^xsd:dateTime ;
+  ns0:releasePublisherUID "https://beta.companieshouse.gov.uk/company/04962733"^^xsd:string ;
+  ns0:releasePublisherURI "https://openopps.com"^^xsd:anyURI ;
+  ns0:releasePublisherName "Open Opps"^^xsd:string ;
+  ns0:releasePublisherScheme "Companies House"^^xsd:string ;
+  ns0:releaseLicense "https://opendatacommons.org/licenses/odbl/"^^xsd:string ;
+  ns0:releasePublicationPolicy "https://openopps.com/legal/"^^xsd:string ;
+  ns0:releaseId "DN379620-1"^^xsd:string ;
+  ns0:releaseDate "2019-01-01T00:00:00+00:00"^^xsd:dateTime ;
+  ns0:releaseTag "tender"^^xsd:string ;
+  dc:language "en"^^xsd:string ;
+  ns0:releaseInitiationType "tender"^^xsd:string .
+
+<http://data.tbfy.eu/contractingProcess/ocds-0c46vo-0009-DN379620-1>
+  a <http://data.tbfy.eu/ontology/ocds#ContractingProcess> ;
+  ns1:ocid "ocds-0c46vo-0009-DN379620-1"^^xsd:string ;
+  ns1:hasRelease <http://data.tbfy.eu/contractingProcess/ocds-0c46vo-0009-DN379620-1/release/DN379620-1> ;
+  ns1:hasTender <http://data.tbfy.eu/tender/ocds-0c46vo-0009-DN379620-1_DN379620-1> ;
+  ns1:hasContract <http://data.tbfy.eu/contract/ocds-0c46vo-0009-DN379620-1_1> .
+
+<http://data.tbfy.eu/contractingProcess/ocds-0c46vo-0009-DN379620-1/buyer>
+  a ns1:Organisation ;
+  ns1:legalName "Wolverhampton City Council"^^xsd:string ;
+  ns1:hasContactPoint <http://data.tbfy.eu/contractingProcess/ocds-0c46vo-0009-DN379620-1/buyer/contactPoint> ;
+  ns1:hasAddress <http://data.tbfy.eu/contractingProcess/ocds-0c46vo-0009-DN379620-1/buyer/address> ;
+  ns1:isBuyerFor <http://data.tbfy.eu/contractingProcess/ocds-0c46vo-0009-DN379620-1> ;
+  ns1:playsRoleIn <http://data.tbfy.eu/contractingProcess/ocds-0c46vo-0009-DN379620-1> .
+
+<http://data.tbfy.eu/contractingProcess/ocds-0c46vo-0009-DN379620-1/buyer/address>
+  a ns1:Address ;
+  schema:addressLocality "Wolverhampton"^^xsd:string ;
+  schema:postalCode "WV1 1RL"^^xsd:string ;
+  schema:addressCountry "United Kingdom"^^xsd:string ;
+  schema:streetAddress "Civic Centre"^^xsd:string .
+
+<http://data.tbfy.eu/contractingProcess/ocds-0c46vo-0009-DN379620-1/buyer/contactPoint>
+  a ns1:ContactPoint, ns1:Person ;
+  schema:email "john.bailey2@wolverhampton.gov.uk"^^xsd:string ;
+  schema:name "John Bailey"^^xsd:string ;
+  schema:telephone "01902 552012"^^xsd:string .
+
+<http://data.tbfy.eu/tender/ocds-0c46vo-0009-DN379620-1_DN379620-1>
+  a ns1:Tender ;
+  ns1:tenderId "DN379620-1"^^xsd:string ;
+  dc:title "WH18001 - Glazing Repairs & Maintenance"^^xsd:string ;
+  dc:description """Wolverhampton Homes (The Client), an Arm’s Length Management Organisation (ALMO), requires an established and competent Contractor (The Contractor) to provide glazing repairs and maintenance services to both void and occupied properties throughout the City of Wolverhampton.To provide glazing se...f the In-House Team by providing a fully integrated and flexible service that is seamless from the customer’s perspective and that ensures that value for money is achieved.Works will include glazing services for the repairs service, works carried out by building solutions teams and void repairs
+More..."""^^xsd:string ;
+  ns1:tenderStatus "complete" ;
+  ns1:hasItemToBeProcured <http://data.tbfy.eu/tender/ocds-0c46vo-0009-DN379620-1_DN379620-1/item/1> ;
+  ns1:hasTenderPeriod <http://data.tbfy.eu/tender/ocds-0c46vo-0009-DN379620-1_DN379620-1/period> ;
+  ns1:hasDocument <http://data.tbfy.eu/tender/ocds-0c46vo-0009-DN379620-1_DN379620-1/document/tender_url> .
+
+<http://data.tbfy.eu/tender/ocds-0c46vo-0009-DN379620-1_DN379620-1/item/1>
+  a ns1:Item ;
+  ns1:itemId "1"^^xsd:string ;
+  ns1:hasClassificaton "72153002" ;
+  ns1:classificationScheme "UNSPSC" .
+
+<http://data.tbfy.eu/tender/ocds-0c46vo-0009-DN379620-1_DN379620-1/period>
+  a ns1:Period ;
+  ns1:periodStartDate "2019-01-01T14:00:00+00:00"^^xsd:dateTime ;
+  ns1:periodEndDate "2019-01-31T15:00:00+00:00"^^xsd:dateTime .
+
+<http://data.tbfy.eu/tender/ocds-0c46vo-0009-DN379620-1_DN379620-1/document/tender_url>
+  a ns1:Document ;
+  ns1:documentId "tender_url"^^xsd:string ;
+  ns1:documentType "tenderNotice" ;
+  dc:language "en"^^xsd:string ;
+  schema:URL "https://procontract.due-north.com/Advert?advertId=a9d162c1-c60d-e911-80f0-005056b64545"^^xsd:string .
+
+<http://data.tbfy.eu/contract/ocds-0c46vo-0009-DN379620-1_1>
+  a ns1:Contract ;
+  ns1:contractId "1"^^xsd:string ;
+  ns1:hasContractPeriod <http://data.tbfy.eu/contract/ocds-0c46vo-0009-DN379620-1_1/contractPeriod> .
+
+<http://data.tbfy.eu/contract/ocds-0c46vo-0009-DN379620-1_1/contractPeriod>
+  a ns1:Period ;
+  ns1:periodStartDate "2019-05-01T00:00:00+00:00"^^xsd:dateTime ;
+  ns1:periodEndDate "2024-04-30T00:00:00+00:00"^^xsd:dateTime .
